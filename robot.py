@@ -1,10 +1,13 @@
 from weapon import Weapon
 
 class Robot:
-    def __init__(self, name) -> None:
-        self.name = ''
+    def __init__(self, name, Weapon):
+        self.name = name
         self.health = 100
-        self.weapon = None
-    
-    def attack(self,dinosaur):
-        self.dinosaur = None
+        self.weapon = Weapon
+        self.weapon_choice = ['sword', 'blaster', 'punch']
+
+    def attack_dinosaur (self,dinosaur):
+        self.dinosaur = dinosaur
+        
+#wager example
