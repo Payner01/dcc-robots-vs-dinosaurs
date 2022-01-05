@@ -7,6 +7,7 @@ class Robot:
         self.weapon = weapon
 
     def attack_dinosaur (self, attack_dinosaur):
-        self.dinosaur = dinosaur
+        attack_dinosaur.health -= self.weapon.attack_power
+        print(f'{attack_dinosaur.name} health is now {attack_dinosaur.health}')
         
-#wager example
+
