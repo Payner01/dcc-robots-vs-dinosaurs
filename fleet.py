@@ -7,9 +7,9 @@ class Fleet:
         self.create_fleet()
 
     def create_fleet(self):
-        weapon_one = Weapon('spunch', 15)
-        weapon_two = Weapon('sword', 25)
-        weapon_three = Weapon('blaster', 35)
+        weapon_one = Weapon('punch', 40)
+        weapon_two = Weapon('sword', 50)
+        weapon_three = Weapon('blaster', 75)
 
         robot_one = Robot('Brian', weapon_one)
         robot_two = Robot('Jeff', weapon_two)
@@ -21,6 +21,6 @@ class Fleet:
 
     def fleet_list(self):
         for robots in self.robots_fleet:
-            print(robots)
+            print(robots.name)
 
 # i want to display the complete fleet for the user

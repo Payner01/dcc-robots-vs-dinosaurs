@@ -1,6 +1,3 @@
-
-from fleet import Fleet
-
-robot_fleet = Fleet
-
-robot_fleet.fleet_list()
+from battlefield import Battlefield
+battlefield = Battlefield()
+battlefield.run_game()
