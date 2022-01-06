@@ -15,13 +15,13 @@ class Battlefield:
         self.display_winners()
         
     def display_welcome(self):
-        print("welcome to Robots vs Dinosaurs")
+        print("welcome to Robots vs Dinosaurs!!")
         print('Each Dinosaur and Robot will start with 100 health')
         print('Dinosaurs belong to a heard while Robots belong to a fleet')
         print('The game will be over once you have defeted the Dinosaurs or the Dinosaurs have defeated you')
 
     def battle(self):
-        print('Robots go first')
+        print('Robots will start first!')
         while len(self.fleet.robots_fleet) > 0 and len(self.herd.dinosaurs_herd) > 0:
             self.robo_turn()
             if len(self.herd.dinosaurs_herd) == 0:
@@ -47,20 +47,20 @@ class Battlefield:
         
         
     def show_dino_opponent_options(self):
-        print("Current Dino Herd")
+        print("The current Dinosaur herd is: ")
         i = 0
         for dino in self.herd.dinosaurs_herd:
             print(f'Press {i} to select {dino.name} ({dino.health} health)')
             i += 1
 
     def show_robo_opponent_options(self):
-        print("Current Robot Fleet")
+        print("The current Robot fleet is: ")
         i = 0
         for robot in self.fleet.robots_fleet:
             print(f'Press {i} to select {robot.name} ({robot.health} health)')
             i += 1
     def display_winners(self):
         if self.herd.dinosaurs_herd == 0:
-            print('The Dinosaurs have won!')
+            print('The Dinosaurs have won! Thank you for playing!')
         else:
-            print('The Robots have won!')
+            print('The Robots have won! Thank you for playing')

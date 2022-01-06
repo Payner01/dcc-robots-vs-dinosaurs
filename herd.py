@@ -8,8 +8,8 @@ class Herd:
 
     def create_herd(self):
         dino_one = Dinosaur("T-rex")
-        dino_two = Dinosaur("Steggo")
-        dino_three = Dinosaur("Bronto")
+        dino_two = Dinosaur("Triceratops")
+        dino_three = Dinosaur("Velociraptor")
 
         self.dinosaurs_herd.append(dino_one)
         self.dinosaurs_herd.append(dino_two)
